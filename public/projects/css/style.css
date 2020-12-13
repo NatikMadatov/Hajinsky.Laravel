@@ -1,0 +1,31 @@
+﻿.youtube{
+	width: 620px;
+	margin: 0 auto;
+}
+
+.youtube a > img {
+	width: 100%;
+	height: auto;
+}
+
+.youtube a {
+	padding: 5px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+	display: block;
+	position: relative;
+}
+
+.youtube a:after {
+	width: 64px;
+	height: 64px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: url("../img/player_play.png") no-repeat;
+	content: " ";
+	opacity: 0.8;
+	margin-top:  -32px;
+	margin-left: -32px;
+}
