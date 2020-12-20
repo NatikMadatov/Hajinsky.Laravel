@@ -45,7 +45,7 @@
                       <td>{{$r->staff_count}}</td>
                   
                       <td><a href="{{route('getNewCompaniesPost',['id' => $r->id])}}" class="btn btn-success">edit</a></td>
-                      <td><a href="{{route('deleteCompanies',['id' => $r->id])}}" class="btn btn-danger">delete</a></td>
+                      <td><a href="{{route('deleteCompanies',['id' => $r->id])}}" class="btn btn-danger" onclick=" return myConfirm()" value="delete" >delete</a></td>
                       
                     </tr>
 

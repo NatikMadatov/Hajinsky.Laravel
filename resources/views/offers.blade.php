@@ -39,7 +39,7 @@
                       <td>{{$r->id}}</td>
                       <td>{{$r->name_az}}</td>
                       <td><a href="{{route('getNewOffersPost',['id' => $r->id])}}" class="btn btn-success">edit</a></td>
-                      <td><a href="{{route('deleteOffers',['id' => $r->id])}}" class="btn btn-danger">delete</a></td>
+                      <td><a href="{{route('deleteOffers',['id' => $r->id])}}" class="btn btn-danger" onclick=" return myConfirm()" value="delete" >delete</a></td>
                     </tr>
 
                     @endforeach

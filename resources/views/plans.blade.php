@@ -37,7 +37,7 @@
                       <td>{{$r->name_az}}</td>
                   
                       <td><a href="{{route('getNewPlansPost',['id' => $r->id])}}" class="btn btn-success">edit</a></td>
-                      <td><a href="{{route('deletePlans',['id' => $r->id])}}" class="btn btn-danger">delete</a></td>
+                      <td><a href="{{route('deletePlans',['id' => $r->id])}}" class="btn btn-danger" onclick=" return myConfirm()" value="delete" >delete</a></td>
                       
                     </tr>
 

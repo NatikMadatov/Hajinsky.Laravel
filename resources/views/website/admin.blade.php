@@ -357,6 +357,20 @@
     </div>
   </div>
 
+            <!-- ___________________ delete confirm function -->
+  <script>
+      function myConfirm() {
+        var result = confirm("Want to delete?");
+        if (result==true) {
+         return true;
+        } else {
+         return false;
+        }
+      }
+
+</script>
+       <!-- _____________________________________________ -->
+
   <!-- Bootstrap core JavaScript-->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

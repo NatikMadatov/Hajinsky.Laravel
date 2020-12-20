@@ -54,7 +54,7 @@
                       <td><img height="50" src="{{'uploads/'.$r->image}}"></td>
                       <td><a href="{{$r->URL}}" class="btn btn-warning" style="width:50">Open video</a></td>
                       <td><a href="{{route('getNewProjectPost',['id' => $r->id])}}" class="btn btn-success">edit</a></td>
-                      <td><a href="{{route('deleteProject',['id' => $r->id])}}" class="btn btn-danger">delete</a></td>
+                      <td><a href="{{route('deleteProject',['id' => $r->id])}}" class="btn btn-danger" onclick=" return myConfirm()" value="delete" >delete</a></td>
                       
                     </tr> 
 
@@ -72,6 +72,7 @@
 
       </div>
       <!-- End of Main Content -->
+
 
 
 
